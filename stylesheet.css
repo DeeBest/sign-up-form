@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+#main {
+    background-color: goldenrod;
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: flex-end;
+}
+#form {
+    width: 50vw;
+    height: 90vh;
+    background-color: bisque;
+}
+#logoContainer {
+    background-color: aquamarine;
+    color: black;
+    width: 48vw;
+    height: 20vh;
+    flex: 1;
+    align-self: center;
+}
