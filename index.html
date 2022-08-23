@@ -10,36 +10,58 @@
 </head>
 <body>
     <div id="main">
+
         <div id="logoContainer">
             <h1>DeeBest Inc.</h1>
         </div>
+
         <div id="formContainer">
             <form action="#" id="form">
-                <label>First Name
-                    <input type="text" name="firstName" id="firstName">
-                </label>
-                <label for="lastName">Last Name
-                    <input type="text" name="lastName" id="lastName">
-                </label>
-                <label for="email">Email
-                    <input type="email" name="email" id="email">
-                </label>
-                <label for="tel">Telephone
-                    <input type="tel" name="tel" id="tel">
-                </label>
-                <label for="pwd1">Password
-                    <input type="password" name="pwd1" id="pwd1">
-                </label>
-                <label for="pwd2">Confirm Password
-                    <input type="password" name="pwd2" id="pwd2">
-                </label>
-                <label for="submitBtn">
-                    <button type="submit" name="submitBtn" id="submitBtn">Create Account</button>
-                </label>
+
+                <div class="introParaRow">
+                    <p>intro para</p>
+                </div>
+
+                <div class="namesRow">
+                    <label>First Name
+                        <input type="text" name="firstName" id="firstName">
+                    </label>
+                    <label for="lastName">Last Name
+                        <input type="text" name="lastName" id="lastName">
+                    </label>
+                </div>
+
+                <div class="contactRow">
+                    <label for="email">Email
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="tel">Telephone
+                        <input type="tel" name="tel" id="tel">
+                    </label>
+                </div>
+
+                <div class="pwdsRow">
+                    <label for="pwd1">Password
+                        <input type="password" name="pwd1" id="pwd1">
+                    </label>
+                    <label for="pwd2">Confirm Password
+                        <input type="password" name="pwd2" id="pwd2">
+                    </label>
+                </div>
+
+                <div class="btnRow">
+                    <label for="submitBtn">
+                        <button type="submit" name="submitBtn" id="submitBtn">Create Account</button>
+                    </label>
+                </div>
+
             </form>
         </div>
     </div>
     <div id="footer">
+        <p>Photo by <a href="https://unsplash.com/@luckybeanz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mark Harpur</a> on 
+            <a href="https://unsplash.com/backgrounds/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
         <p>Created By Simphiwe © <script>document.write(new Date().getFullYear())</script></p>
     </div>
 </body>

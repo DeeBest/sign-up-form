@@ -1,23 +1,36 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: azure;
+}
 #main {
-    background-color: goldenrod;
+    background-color: rgb(241, 241, 130);
+    background-image: url(bck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 98vw;
-    height: 98vh;
+    height: 88vh;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 #form {
-    width: 50vw;
-    height: 90vh;
-    background-color: bisque;
+    width: 45vw;
+    height: 80vh;
+    background-color: rgba(255, 228, 196, 0.688);
+    border-radius: 2%;
+    margin-right: 3vw;
 }
 #logoContainer {
-    background-color: aquamarine;
+    background-color: rgba(242, 236, 226, 0.514);
     color: black;
-    width: 48vw;
+    width: 45vw;
     height: 20vh;
     flex: 1;
     align-self: center;
+}
+#footer {
+    align-self: flex-end;
 }
