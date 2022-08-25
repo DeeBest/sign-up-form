@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: azure;
+    background-color: rgb(171, 243, 243);
 }
 #main {
     background-color: rgb(241, 241, 130);
@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 98vw;
+    width: 100vw;
     height: 88vh;
     display: flex;
     justify-content: flex-end;
@@ -22,31 +22,71 @@ body {
     width: 45vw;
     height: 80vh;
     background-color: rgba(255, 228, 196, 0.688);
-    border-radius: 2%;
     margin-right: 3vw;
-    line-height: 3;
     margin-top: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.formRow {
+    margin-top: 1vh;
 }
 #logoContainer {
-    background-color: rgba(242, 236, 226, 0.514);
-    color: black;
+    background-color: rgba(201, 158, 245, 0.585);
+    color: rgb(45, 41, 41);
     width: 45vw;
     height: 20vh;
     flex: 1;
     align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Righteous', cursive;
+    font-size: 5vh;
+}
+#logoImg {
+    height: 15vh;
+    margin-right: 2vw;
+    border: none;
 }
 #footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
+    font-weight: 600;
+    padding: 1vw;
 }
 #namesRow,#contactRow,#pwdsRow {
-    background-color: rgba(255, 228, 196, 0.331);
+    background-color: rgba(195, 190, 184, 0.331);
     height: 10vh;
+    width: auto;
+    padding-left: 3rem;
 }
 #introParaRow,#btnRow {
-    background-color: rgba(255, 228, 196, 0.81);
+    background-color: rgba(171, 243, 243, 0.492);
     height: 25vh;
+    width: auto;
+    padding-left: 3rem;
+    line-height: 3vh;
+    padding-top: 2rem;
 }
-label {
-    
+button {
+    margin-bottom: 3vh;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 20%;
+    background-color: rgba(195, 190, 184, 0.331);;
+}
+button:hover {
+    background-color: rgba(201, 158, 245, 0.585);
+    color: rgb(45, 41, 41);
+}
+h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Righteous', cursive;
+}
+label, input {
+    width: 5vw;
+    padding: auto;
+}
+a:hover {
+    color: black;
 }
