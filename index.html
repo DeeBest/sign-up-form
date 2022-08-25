@@ -15,6 +15,7 @@
     <div id="main">
 
         <div id="logoContainer">
+            <img src="eagle-png.webp" alt="Eagle">
             <h1>DeeBest Inc.</h1>
         </div>
 
@@ -25,42 +26,40 @@
                     <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, 
                         commodi!
                     </p>
-                    <br>
-                    <br>
-                    <p>Sign up below</p>
+                    <p class="signPara">Sign up below</p>
                 </div>
 
-                <div class="formRow" id="namesRow">
-                    <h2>Let's Do This</h2>
-                    <label>First Name
-                        <input type="text" name="firstName" id="firstName" required minlength="3" maxlength="10">
-                    </label>
-                    <label for="lastName">Last Name
-                        <input type="text" name="lastName" id="lastName" minlength="3" maxlength="10" required>
-                    </label>
-                </div>
-
-                <div class="formRow" id="contactRow">
-                    <label for="email">Email
-                        <input type="email" name="email" id="email" placeholder="deebest@example.com" required>
-                    </label>
-                    <label for="tel">Telephone
-                        <input type="tel" name="tel" id="tel" required>
-                    </label>
-                </div>
-
-                <div class="formRow" id="pwdsRow">
-                    <label for="pwd1">Password
-                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" id="pwd1" required>
-                    </label>
-                    <label for="pwd2">Confirm Password
-                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2" id="pwd2" required>
-                    </label>
+                <div id="formBody">
+                    <div class="formRow" id="namesRow">
+                        <h2>Let's Do This</h2>
+                        <label>First Name
+                            <input type="text" name="firstName" id="firstName" required minlength="3" maxlength="10">
+                        </label>
+                        <label for="lastName">Last Name
+                            <input type="text" name="lastName" id="lastName" minlength="3" maxlength="10" required>
+                        </label>
+                    </div>
+                    <div class="formRow" id="contactRow">
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" placeholder="deebest@example.com" required>
+                        </label>
+                        <label for="tel">Telephone
+                            <input type="tel" name="tel" id="tel" required>
+                        </label>
+                    </div>
+                    <div class="formRow" id="pwdsRow">
+                        <label for="pwd1">Password
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" id="pwd1" required>
+                        </label>
+                        <label for="pwd2">Confirm Password
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2" id="pwd2" required>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="formRow" id="btnRow">
                     <label for="submitBtn">
-                        <button type="submit" name="submitBtn" id="submitBtn">Create Account</button>
+                        <button type="submit" name="submitBtn" id="submitBtn">Sign Up</button>
                     </label>
                     <p>Already have an account? <a href="#">Log in!</a></p>
                 </div>

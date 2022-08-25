@@ -15,24 +15,36 @@ body {
     width: 100vw;
     height: 88vh;
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
 }
 #form {
-    width: 45vw;
+    width: 55vw;
     height: 80vh;
     background-color: rgba(255, 228, 196, 0.688);
     margin-right: 3vw;
     margin-top: 3vh;
     font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.signPara {
+    margin-top: 4vh;
 }
 .formRow {
-    margin-top: 1vh;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    flex: 1;
+    font-size: 2.5vh;
 }
 #logoContainer {
     background-color: rgba(201, 158, 245, 0.585);
     color: rgb(45, 41, 41);
-    width: 45vw;
+    width: 35vw;
     height: 20vh;
     flex: 1;
     align-self: center;
@@ -40,7 +52,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Righteous', cursive;
-    font-size: 5vh;
+    font-size: 3.5vh;
 }
 #logoImg {
     height: 15vh;
@@ -53,40 +65,51 @@ body {
     font-weight: 600;
     padding: 1vw;
 }
-#namesRow,#contactRow,#pwdsRow {
+#formBody {
+    height: 30vh;
     background-color: rgba(195, 190, 184, 0.331);
-    height: 10vh;
     width: auto;
-    padding-left: 3rem;
+    padding-left: 5vw;
+}
+#namesRow,#contactRow {
+    margin-bottom: 1vh;
 }
 #introParaRow,#btnRow {
     background-color: rgba(171, 243, 243, 0.492);
     height: 25vh;
     width: auto;
-    padding-left: 3rem;
+    padding-left: 5vw;
     line-height: 3vh;
-    padding-top: 2rem;
+    padding-top: 2vh;
 }
 button {
     margin-bottom: 3vh;
     width: 15vw;
     height: 5vh;
-    border-radius: 20%;
-    background-color: rgba(195, 190, 184, 0.331);;
+    border-radius: 10px;
+    background-color: rgba(201, 158, 245, 0.585);
+    font-size: 2.5vh;
+    color: blue;
 }
 button:hover {
-    background-color: rgba(201, 158, 245, 0.585);
+    background-color: rgba(113, 29, 197, 0.585);
     color: rgb(45, 41, 41);
+    font-size: 3vh;
 }
 h2 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1vh;
+    margin-bottom: 2vh;
     font-family: 'Righteous', cursive;
+    font-size: 4vh;
 }
 label, input {
-    width: 5vw;
-    padding: auto;
+    width: 15vw;
+    display: inline-block;
 }
 a:hover {
     color: black;
+}
+img {
+    height: 7vw;
+    width: 10vw;
 }
