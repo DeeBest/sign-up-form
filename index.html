@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -32,28 +32,30 @@
                 <div id="formBody">
                     <div class="formRow" id="namesRow">
                         <h2>Let's Do This</h2>
-                        <label>First Name
+                        <p id="requiredPara" >Required fields are followed by <span aria-label="required">*</span>.</p>
+                        <label>First Name<span aria-label="required">*</span>
                             <input type="text" name="firstName" id="firstName" required minlength="3" maxlength="10">
                         </label>
-                        <label for="lastName">Last Name
+                        <label for="lastName">Last Name<span aria-label="required">*</span>
                             <input type="text" name="lastName" id="lastName" minlength="3" maxlength="10" required>
                         </label>
                     </div>
                     <div class="formRow" id="contactRow">
-                        <label for="email">Email
+                        <label for="email">Email<span aria-label="required">*</span>
                             <input type="email" name="email" id="email" placeholder="deebest@example.com" required>
                         </label>
-                        <label for="tel">Telephone
+                        <label for="tel">Telephone<span aria-label="required">*</span>
                             <input type="tel" name="tel" id="tel" required>
                         </label>
                     </div>
                     <div class="formRow" id="pwdsRow">
-                        <label for="pwd1">Password
+                        <label for="pwd1">Password<span aria-label="required">*</span>
                             <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" id="pwd1" required>
                         </label>
-                        <label for="pwd2">Confirm Password
+                        <label for="pwd2">Confirm Password<span aria-label="required">*</span>
                             <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2" id="pwd2" required>
                         </label>
+                        <p id="results">Password should contain a minimum of 6 characters, 1 uppercase, 1 lowercase and 1 symbol.</p>
                     </div>
                 </div>
 
